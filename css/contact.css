@@ -1,0 +1,938 @@
+/*====================================
+             CONTACT START
+====================================*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --font-style: 'Sarala', sans-serif;
+    --font-style-bebas: 'Bebas Neue', cursive;
+     --golden-color: #FF9900;
+     --line-color-one: #2e9fe6;
+     --line-color-two: #E6CA2E;
+     --font-color: #bbb;
+     --bg-color-one: #222;
+     --bg-color-two: #444;
+     --year-color: #333;    
+ }
+
+.contact-container{
+    font-family: var(--font-style);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container-second{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-h1{
+    font-size: 4rem;
+    z-index: 1;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-family: var(--font-style);
+}
+
+.contact-container_h1{
+    background: url(../img/cricket_fb_2.jpg) fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.contact-container_h1:after{
+    content: "";
+    background: rgba(0, 0, 0, 0.644);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+}
+
+.contact-h3{
+    font-size: 3rem;
+    color: black;
+    font-family: var(--font-style);
+}
+
+.contact-h4, .contact-label{
+    color: black;
+    font-size: 1.5rem;
+    font-family: var(--font-style);
+}
+
+#contact-us{
+    width: 100%;
+}
+
+#location-directions{
+    /* height: 100vh; */
+    width: 100%;
+}
+
+.contact-left{
+    width: 45%;
+    padding: 3vh 3vw 0vh 10vw;
+}
+
+.contact-form{
+    width: 55%;
+    padding: 3vh 5vw 0vh 10vw;
+}
+
+.contact-left_person{
+    padding: 3vh 0;
+    min-width: 375px;
+}
+
+.contact-left_person > p{
+    font-size: 1.2rem;
+    font-family: var(--font-style);
+}
+
+.contact-left_person p > a{
+    padding: 0;
+    text-decoration: none;
+    color: var(--golden-color);
+}
+
+.contact-left_person p > a:hover{
+    color: var(--line-color-two);
+    cursor: pointer;
+}
+
+.contact-p, .tel-number{
+    font-size: 1.2rem;
+}
+
+.contact-form_group{
+    padding-bottom: 1vh;
+}
+
+.contact-form, .contact-form_group{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form_group > label{
+    font-family: var(--font-style);
+}
+
+.contact-form_group > input{
+    width: 80%;
+    height: 45px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    padding: 5px 5px;
+    outline: none;
+    font-size: 16px;
+    font-family: var(--font-style);
+}
+
+.contact-form_group > input::placeholder{
+    font-size: 16px;
+    padding: 2px;
+}
+
+.contact-form_group > textarea{
+    height: 15vh;
+}
+
+.contact-form_message{
+    width: 80%;
+    border-radius: 3px;
+    border: 2px solid grey;
+    outline: none;
+    font-size: 16px;
+    padding: 2px 2px;
+    font-family: var(--font-style);
+}
+
+.contact-form_message::placeholder{
+    font-size: 16px;
+    padding: 2px;
+}
+
+.contact-form_btn{
+    width: 80%;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 2vh 0;
+    border-radius: 3px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    border: 2px solid var(--line-color-two);
+    background: var(--line-color-two);
+    display: inline-block;
+    transition: .4s;
+    font-family: var(--font-style);
+    letter-spacing: 1px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-form_btn:hover{
+    background: var(--golden-color);
+    border-color: var(--golden-color);
+    color: black;
+    font-weight: bold;
+}
+
+.contactus-location-all{
+    margin-top: 77px;
+    padding-top: 77px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sarala', sans-serif;
+    padding-bottom: 10vh;
+}
+
+.location-container-second{
+    display: flex;
+    flex-direction: row;
+}
+
+.contactus-location_h1{
+    background: url(../img/house_slide.png) fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.contactus-location_h1:after{
+    content: "";
+    background: rgba(0, 0, 0, 0.644);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+}
+
+.location-h1{
+    font-size: 4rem;
+    z-index: 1;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-family: var(--font-style);
+}
+
+.location-h3{
+    font-size: 3rem;
+    color: black;
+    padding-bottom: 3vh;
+    font-family: var(--font-style);
+    width: 100%;
+    /* min-width: 355px; */
+}
+
+.location-left{
+    margin: 5vh 3vw;
+    padding: 3vh 5vw 0vh 10vw;
+    width: 45%;
+    min-width: 355px;
+}
+
+.location-right{
+    width: 55%;
+    padding: 3vh 5vw 0vh 10vw;
+}
+
+.location-ltop_info p > a{
+    padding: 0;
+    text-decoration: none;
+    color: var(--golden-color);
+}
+
+.location-ltop_info p > a:hover{
+    color: var(--line-color-two);
+    cursor: pointer;
+}
+
+.location-ltop_location > p{
+    font-size: 1.4rem;
+    min-width: 355px;
+}
+
+.location-map_h3{
+    padding-bottom: 5vh;
+    font-size: 3rem;
+    color: black;
+    font-family: var(--font-style);
+}
+
+.location-right_map > iframe{
+    width: 100%;
+    width: 350px;
+    max-width: 500px;
+    height: 400px;
+    position: absolute;
+}
+
+.location-detail-p > p{
+    font-family: var(--font-style);
+    font-size: 1.2rem;
+    min-width: 290px;
+}
+
+.location-p{
+    font-size: 1.2rem;
+    min-width: 355px;
+}
+
+.location-p_space{
+    padding-left: 1.5rem;
+    font-family: var(--font-style);
+}
+
+.location-detail-p-mobile{
+    display: none;
+}
+
+/* .location-p > .fas{
+    color: grey;
+} */
+
+/* .fas{
+    color: grey;
+} */
+
+.mail-tel{
+    color: grey;
+}
+
+.mail-tel-mobile{
+    display: none;
+}
+
+.location-direction-info{
+    margin: 0 auto;
+}
+
+.location-ltop_info-mobile{
+    display: none;
+}
+
+#contact-newsletter{
+    width: 100%;
+    /* height: 70vh; */
+}
+
+.contact-newsletter-all{
+    padding-top: 77px;
+    padding-bottom: 3vh;
+}
+
+.contactus-newsletter_h1{
+    background: url(../img/cricket-018.png) fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.contactus-newsletter_h1:after{
+    content: "";
+    background: rgba(0, 0, 0, 0.644);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+}
+
+.newsletter-h1{
+    font-size: 4rem;
+    z-index: 1;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-family: var(--font-style);
+}
+
+.contact-newsletter_group{
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-newsletter_group > input{
+    width: 30%;
+    height: 45px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    padding: 5px 5px;
+    outline: none;
+    font-size: 16px;
+    font-family: var(--font-style);
+    margin: 1vh auto;
+}
+
+.contact-newsletter-btn{
+    text-align: center;
+    outline: none;
+}
+
+.contact-newsletter_btn{
+    width: 15%;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 2vh 0;
+    border-radius: 3px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    border: 2px solid var(--line-color-two);
+    background: var(--line-color-two);
+    display: inline-block;
+    transition: .4s;
+    font-family: var(--font-style);
+    letter-spacing: 1px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-newsletter_btn:hover{
+    background: var(--golden-color);
+    border-color: var(--golden-color);
+    color: black;
+    font-weight: bold;
+}
+
+.contact-newsletter-form{
+    padding-top: 5%;
+}
+
+#result-newsletter-msg > p{
+    width: 15%;
+}
+
+/*====================================
+             CONTACT FIN
+====================================*/
+@media screen and (max-width: 1024px){
+
+    .contact-h3, .location-h3, .location-map_h3{
+        font-size: 2.5rem;
+    }
+
+    .contact-container{
+        margin-top: 80px;
+    }
+
+    .contact-left{
+        width: 50%;
+    }
+
+    .contact-p, .tel-number{
+        font-size: 1rem;
+    }
+
+    .contact-form{
+        /* margin: 5vh auto 0vh; */
+        width: 50%;
+    }
+
+    .tel-number-p{
+        font-size: 1.2rem;
+    }
+
+    .contactus-location-all{
+        padding-top: 70px;
+    }
+
+    .location-h3{
+        line-height: 1.2;
+        /* max-width: 91%; */
+    }
+
+    .location-left{
+        /* margin: s5vh 0vw 5vh 3vw; */
+        width: 50%;
+    }
+
+    .location-right{
+        width: 50%;
+    }
+
+    .location-right_map-outside{
+        position: relative;
+        width: 100%;
+        /* padding: 5vh 5vw; */
+    }
+
+    .location-right_map{
+        /* height: 0;
+        padding-top: 56.25%;
+        width: auto; */
+
+        height: 0;
+        overflow: hidden;
+        padding-top: 60%;
+        /* padding-left: 20%; */
+        position: relative;
+        width: 100%;
+        /* padding: 5vh 5vw; */
+    }
+
+    .location-right_map > iframe{
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* margin: 0 auto; */
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    .contact-newsletter-all{
+        padding-top: 70px;
+        padding-bottom: 3vh;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .contactus-location-all{
+        padding-top: 69px;
+    }
+
+    .contact-container{
+        margin-top: 100px;
+    }
+
+    .contact-container-second{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-container_h1{
+        background: url(../img/cricket_fb_2-contact-tablet.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .contact-h1{
+        font-size: 3rem;
+    }
+
+    .contact-h4{
+        font-size: 1.3rem;
+    }
+
+    .contact-left{
+        width: 100%;
+    }
+
+    .contact-left_person{
+        /* padding-left: 25%; */
+        text-align: center;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .contact-form{
+        padding-left: 25%;
+    }
+
+    .contact-h3, .location-h3, .location-map_h3{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .contact-h3{
+        padding-top: 3vh;
+    }
+    
+    .contact-form_group > input::placeholder{
+        font-size: 16px;
+        padding: 2px;
+    }
+    
+    .contact-form_message{
+        width: 80%;
+        height: 20%;
+        border-radius: 3px;
+        border: 2px solid grey;
+        outline: none;
+        font-size: 16px;
+        padding: 2px 2px;
+        font-family: var(--font-style);
+    }
+
+    .contactus-location_h1{
+        background: url(../img/house_contact-mobile.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .location-container-second{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location-h1{
+        font-size: 2.5rem;
+    }
+
+    .location-h3{
+        line-height: 1.2;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .location-left{
+        margin: 3vh auto 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .location-right_map-outside{
+        width: 100%;
+        /* height: 40%; */
+    }
+
+    .location-right_map{
+        height: 0;
+        overflow: hidden;
+        padding-top: 56.25%;
+        /* padding-left: 20%; */
+        position: relative;
+        width: 100%;
+        /* padding: 5vh 5vw; */
+    }
+
+    .location-right_map > iframe{
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* margin: 0 auto; */
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    .location-right{
+        width: 100%;
+        margin: 0;
+        padding: 3vh 10vw 0vh 10vw;
+    }
+
+    .contact-container, .contactus-location-all{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location-ltop_info > p{
+        font-size: 1.2rem;
+    }
+
+    .location-detail-p{
+        font-size: 1.2rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .location-detail-p > p{
+        font-family: var(--font-style);
+    }
+
+    .location-ltop_info{
+        text-align: center;
+    }
+
+    .location-p_space{
+        padding-left: 1.5rem;
+        font-family: var(--font-style);
+    }
+
+    .contact-newsletter-all{
+        padding-top: 69px;
+        margin-top: 69px;
+    }
+
+    .contactus-newsletter_h1{
+        background: url(../img/cricket-018-newsletter-mobile.png) fixed no-repeat;
+        background-size: cover;
+    }
+
+    .newsletter-h1{
+        font-size: 3rem;
+    }
+
+    .contact-newsletter_group > input {
+        width: 63%;
+    }
+
+    .contact-newsletter_btn{
+        width: 25%;
+        min-width: 120px;
+    }
+
+    #result-newsletter-msg > p{
+        width: 25%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 375px){
+    .contact-container{
+        margin-top: 80px;
+        font-family: var(--font-style);
+        /* height: 130vh; */
+    }
+    .contact-h1, .location-h1{
+        font-size: 2.5rem;
+    }
+    .contact-h3, .location-h3{
+        font-size: 2.0rem;
+    }
+    .contact-h4{
+        text-align: center;
+    }
+
+    .contact-container_h1{
+        background: url(../img/cricket_fb_2-contact-mobile.png) center no-repeat;
+        background-size: cover;
+    }
+    .mail-tel-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .mail-tel{
+        font-size: 4rem;
+    }
+    .mail-tel-laptop{
+        display: none;
+    }
+
+    .mail-tel-mobile{
+        justify-content: center;
+    }
+
+    .mail-tel-mobile a{
+        display: block;
+        float: left;
+        margin: 0 5px 5px 0;
+        padding: 0;
+    }
+    .mail-tel-mobile i:hover{
+        background: black;
+        color: var(--line-color-two);
+    }
+    .mail-tel-mobile i{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 50%;
+        background: var(--line-color-two);
+        line-height: 50px;
+        text-align: center;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .contact-left{
+        padding: 0vh 5vw;
+    }
+
+    .contact-left_person{
+        padding: 3vh 5vw 0vh 5vw;
+    }
+
+    .contact-form{
+        padding-left: 5vw; 
+    }
+
+    .contact-form_message{
+        width: 100%;
+    }
+
+    .contact-label{
+        font-size: 1.3rem;
+    }
+
+    .contact-form_group > input{
+        width: 100%;
+    }
+
+    .contact-form_btn{
+        width: 100%;
+    }
+
+    .contactus-location-all{
+        font-family: var(--font-style);
+        /* margin-top: 77px;
+        padding-top: 70px; */
+        padding: 0;
+        margin: 0;
+    }
+
+    #result-contact-msg > p{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #location-directions{
+        width: 100vw;
+        /* height: 105vh; */
+    }
+
+    .contactus-location_h1{
+        background: url(../img/house_contact-mobile.png) center no-repeat;
+        background-size: cover;
+        margin-top: 77px;
+    }
+
+    .location-detail-p{
+        text-align: center;
+    }
+
+    .location-h3{
+        max-width: 92%;
+        margin: 0 auto;
+        max-width: 345px;
+    }
+
+    .location-p_space{
+        padding: 0vw;
+    }
+
+    .location-map_h3{
+        font-size: 2rem;
+    }
+
+    .location-right{
+        padding: 0vh 5vw;
+    }
+
+    .location-ltop_info{
+        display: none;
+    }
+
+    .location-left{
+        width: 100%;
+    }
+
+    .location-ltop_info-mobile{
+        display: inline-block;
+        padding-left: 30%;
+    }
+
+    .location-ltop_info-mobile a{
+        display: block;
+        float: left;
+        margin: 0 5px 5px 0;
+        padding: 0;
+    }
+
+    .location-ltop_info-mobile i:hover{
+        background: black;
+        color: var(--line-color-two);
+    }
+    .location-ltop_info-mobile i{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 50%;
+        background: var(--line-color-two);
+        line-height: 50px;
+        text-align: center;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    /* .location-right_map{
+        padding-top: 3vh;
+        padding-left: 47px;
+    } */
+
+    /* .location-map_h3{
+        padding-bottom: 2vh;
+    }
+
+    iframe{
+        height: 200px;
+        width: 150px;
+        position: absolute;
+    } */
+
+    .location-detail-p{
+        display: none;
+    }
+
+    .location-detail-p-mobile{
+        display: inherit;
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+
+    .contact-newsletter_group > input {
+        width: 80%;
+    }
+
+    .contact-newsletter-form{
+        padding-top: 20px;
+    }
+
+    .contact-newsletter_group > p{
+        font-size: 1.1rem;
+    }
+
+    .contact-newsletter_btn{
+        width: 30%;
+        font-size: 1rem;
+        height: 45px;
+        width: 40%;
+    }
+
+    .contact-newsletter-form{
+        padding-top: 20px;
+    }
+
+    #result-newsletter-msg > p{
+        width: 80%;
+    }
+
+    .contactus-newsletter_h1{
+        background: url(../img/cricket-018-newsletter-mobile.png) center no-repeat;
+    }
+}

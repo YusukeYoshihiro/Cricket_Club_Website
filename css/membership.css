@@ -1,0 +1,215 @@
+:root{
+    --font-style: 'Oswald', cursive;
+    --golden-color: #FF9900;
+    --line-color-one: #2e9fe6;
+    --line-color-two: #E6CA2E;
+    --font-color: #bbb;
+    --bg-color-one: #222;
+    --bg-color-two: #444;
+    --year-color: #333;    
+    --bg-gray: #e5e5e5;
+    --font-style-bebas: 'Bebas Neue', cursive;
+    --font-style-oswald: 'Oswald', sans-serif;
+}
+
+
+h2{
+   font-size: 3rem;
+}
+
+h3{
+   color: #F49D00;
+}
+
+
+section{
+    font-size: 1rem;
+}
+
+
+.form_btn {
+    font-size: 1rem;
+    height: 60px;
+    width: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #F49D00;
+    background: #F49D00;
+    /* display: inline-block; */
+    transition: .4s;
+    text-decoration: none;
+    justify-content: center;
+    /* position: absolute; */
+    /* transform: translateX(-50%); */
+}
+
+.form_btn:hover {
+    background: #E6CA2E;
+    border-color: #E6CA2E;
+    color: black;
+    font-weight: bold;
+    outline: none;
+}
+
+
+
+
+/*  Main     */
+
+
+#member {
+   width: 100%;
+   height: 100vh;
+}
+
+
+.member-title {
+   height: 100vh;
+   width: 100%;
+   background: url(../img/membershipFive.jpg) center center no-repeat;
+   background-size: cover;
+}
+
+.opacity-con {
+   background-color: rgba(0, 0, 0, 0.5);
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+   position: relative;
+}
+
+.member-colorbox {
+   height: 220px;
+   width: 280px;
+   background: #FF9900;
+   position: absolute;
+   flex-direction: row;
+   top: 0;
+}
+
+.member-maintitle {
+   position: absolute;
+   font-size: 4rem;
+   color: white;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+
+}
+
+
+.member-title-subtext-background {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 100vh;
+   width: 40%;
+   position: relative;
+   left: 5%;
+   background: rgba(255, 255, 255, 0.6);
+}
+
+p.member-title-subtext {
+   font-size: 2rem;
+   font-weight: bold;
+   color: black;
+   padding: 15px;
+   position: absolute;
+   top: 35%;
+   text-align: center;
+}
+
+
+
+/* grid*/
+
+.detail-container {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1%;
+    /* background-color: #2196F3; */
+    /* padding: 10px; */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.3);
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 3px;
+
+    
+}
+
+.feature-item {
+  border-bottom: 1px solid var(--bg-gray);
+  padding: 20px;
+  font-size: 1rem;
+  
+}
+
+.detail-item {
+  border-bottom: 1px solid var(--bg-gray);
+  padding: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn-item {    
+    padding-top: 20%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+
+.fas.fa-check{
+    color: green;
+    font-size: 1.3rem;
+}
+
+#packages-detail{
+    padding: 5%;
+}
+
+
+/* gral */
+#packages-gral{
+    width: 100%;
+    height: 100vh;
+    /* background-color: var(--bg-gray); */
+    padding: 5%;
+}
+
+.gral-membership{
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.gral-packs{
+    display: flex;
+    width: 100%;
+    padding-top: 3%;
+    /* background-color: aqua; */
+}
+
+.text-pack{
+    text-align: left;
+    padding-top: 5%;
+}
+
+.package-item{
+    width: 33%;
+    padding: 0 2%;   
+    /* background-color: blue; */
+    text-align: center;
+}
+
+.package-item .pack-item-price
+{
+    text-align: center;
+    font-size: x-large;
+    padding: 10% 0;
+}
+
+

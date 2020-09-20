@@ -1,0 +1,1426 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-style: 'Sarala', sans-serif;
+    --font-style-bebas: 'Bebas Neue', cursive;
+    /* --font-style-oswald: 'Oswald', sans-serif; */
+    --golden-color: #FF9900;
+    --line-color-one: #2e9fe6;
+    --line-color-two: #E6CA2E;
+    --font-color: #bbb;
+    --bg-color-one: #222;
+    --bg-color-two: #444;
+    --bg-gray: #e5e5e5;
+    --year-color: #333;
+    --basic-color-one: #000;
+    --basic-color-two: #fff;
+    --opacity-black: rgba(0, 0, 0, 0.5);
+    --opacity-white: rgba(255, 255, 255, 0.5);
+}
+
+#club {
+    /* height: auto; */
+    width: 100%;
+    font-family: var(--font-style-oswald);
+}
+
+#about-wvcc {
+    width: 100%;
+    /* height: 100vh; */
+    /* padding: 0vh 5vw 0vh; */
+    background: var(--bg-gray);
+}
+
+#life-members {
+    /* height: 100vh; */
+    width: 100%;
+    background: var(--bg-gray);
+}
+
+#club-programs {
+    /* height: 120vh; */
+    width: 100%;
+    background: var(--basic-color-two);
+}
+
+#club-facilities {
+    width: 100%;
+}
+
+.club-all{
+    width: 100%;
+    background: url(../img/club-cricket40.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.opacity-con {
+    background: var(--opacity-black);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.club-title-h1 {
+    height: 250px;
+    width: 180px;
+    background: var(--golden-color);
+    position: absolute;
+    flex-direction: row;
+    top: 0;
+}
+
+.club-maintitle {
+    position: absolute;
+    font-size: 5rem;
+    color: var(--basic-color-two);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 3.5px;
+}
+
+.club-title-sentence {
+    font-size: 2rem;
+    color: var(--basic-color-one);
+    text-align: center;
+    padding: 15px;
+}
+
+.club-title-explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    position: relative;
+    left: 55%;
+    background: var(--opacity-white);
+}
+
+p.club-sentence-first {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--basic-color-one);
+    padding: 15px;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+}
+
+.club-title-button {
+    font-size: 1rem;
+    height: 60px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--basic-color-two);
+    border: 2px solid var(--golden-color);
+    background: var(--golden-color);
+    display: inline-block;
+    transition: .4s;
+    text-decoration: none;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    transform: translateX(-50%);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+}
+
+.club-title-button:hover {
+    background: var(--line-color-two);
+    border-color: var(--line-color-two);
+    color: var(--basic-color-one);
+    font-weight: bold;
+    outline: none;
+}
+
+.cricket-list{
+    list-style-image: url('../img/lst_icon_40.png');
+    padding-left: 4%;
+}
+/* =======================================
+             ABOUT WVCC
+======================================== */
+
+.about-wvcc-h1 {
+    padding-top: 10vh;
+    /* text-align: center; */
+    padding-left: 7vw;
+    font-size: 3rem;
+    font-family: var(--font-style);
+}
+
+.club-about-all{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.club-about-top {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+}
+
+.club-about-bottom {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5vh;
+    /* height: 60%; */
+}
+
+.cricket-list{
+    list-style-image: url('../img/lst_icon_40.png');
+    padding-left: 20px;
+}
+
+/* .pleft3{
+    padding: 3%;
+} */
+
+.club-about-sentence{
+    padding: 0vh 2vw;
+}
+
+.club-about-sentence_first {
+    width: 55%;
+}
+
+.club-about-sentence_second {
+    width: 45%;
+    padding-left: 5vw;
+}
+
+.club-about-sentence_second>p>span {
+    color: var(--golden-color);
+}
+
+.club-about-sentence_third {
+    width: 70%;
+    padding-bottom: 10vh;
+}
+
+.club-about-sentence_third>p>span {
+    color: var(--golden-color);
+}
+
+.club-about-sentence_imgbg {
+    margin-top: 100px;
+}
+
+.club-title-sentence input {
+    background: var(--golden-color);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    margin: 2vh auto;
+    height: 50px;
+    cursor: pointer;
+    color: var(--basic-color-one);
+    font-weight: bold;
+    border: 2px solid var(--golden-color);
+    display: inline-block;
+    transition: .4s;
+    font-family: var(--font-style);
+    outline: none;
+}
+
+.club-title-btn {
+    text-align: center;
+}
+
+.club-title-sentence input:hover {
+    background: var(--line-color-two);
+    border-color: var(--line-color-two);
+    color: var(--basic-color-one);
+    font-weight: bold;
+    outline: none;
+}
+
+.club-about-imgbg {
+    position: relative;
+    width: 30%;
+}
+
+.club-about-sentence_img {
+    background: var(--line-color-two);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+.club-about-sentence_img::before {
+    position: absolute;
+    content: "";
+    background: url(../img/cricketBall.png) no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin-left: -30px;
+    margin-top: -30px;
+    z-index: 0;
+}
+
+
+/* =======================================
+             MANAGEMENT
+======================================== */
+
+.club-management-all {
+    padding-top: 90px;
+    padding-bottom: 5vh;
+    background: url(../img/cricket-0015-club.png) fixed no-repeat;
+    background-size: cover;
+}
+
+.club-management-title {
+    text-align: center;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--basic-color-two);
+    width: 100%;
+    margin: 0 auto 5vh;
+}
+
+.club-management-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.club-management-card {
+    width: 450px;
+    height: 255px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* padding-top: 5vh; */
+    list-style: none;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.club-management-card .management-card-front,
+.club-management-card .management-card-front .management-card-back {
+    width: 450px;
+    height: 255px;
+}
+
+.club-management-card .management-card-front {
+    position: relative;
+    overflow: hidden;
+}
+
+.management-card-front .management-card-back {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.management-card-front:hover .management-card-back {
+    opacity: 1;
+    transform: none;
+}
+
+.management-card-back {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 450px;
+    height: 255px;
+    box-sizing: border-box;
+    background: var(--basic-color-two);
+    display: flex;
+    flex-direction: row;
+}
+
+.management-card-logo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .management-card-logo > img{
+      height: 140px;
+      width: 110px;
+      padding: 20px;
+      float: left;
+  }
+
+   .management-name-role{
+       line-height: 2;
+       text-align: center;
+       padding-top: 25%;
+       padding-right: 20%;
+  } 
+  
+  .management-name-role > h4{
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      color: var(--basic-color-one);
+      text-align: center;
+      margin: 0;
+  }
+  
+  .management-name-role > h1{
+      margin: 0;
+      color: var(--basic-color-one);
+      text-transform: uppercase;
+      font-weight: 400;
+      line-height: 50%;
+      text-align: center;
+      font-size: 1.8rem;
+  }
+
+  .name-role-small{
+      line-height: 1.1;
+       text-align: center;
+       padding-top: 25%;
+       padding-right: 0%;
+  }
+
+  .name-role-small > h4{
+      letter-spacing: 0;
+      font-size: 0.8rem;
+      padding-right: 100px;
+      /* margin-bottom: 10px; */
+      color: var(--basic-color-one);
+      text-align: center;
+      width: 100%;
+      /* margin: 0; */
+  }
+
+  .name-role-small > h1{
+      text-align: center;
+      padding-top: 5px;
+      margin: 0;
+      color: var(--basic-color-one);
+      text-transform: uppercase;
+      font-weight: 400;
+      line-height: 50%;
+      font-size: 1.8rem;
+  }
+
+  .name-role-small > p{
+    letter-spacing: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--basic-color-one);
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-back-name{
+      font-size: 1.2rem;
+      padding-top: 80px;
+  }
+
+  .card-back-info{
+      font-size: 3rem;
+  }
+
+  /* .card-back-info > .fa-phone-alt:before{
+      font-size: 1.8rem;
+  } */
+
+  .management-back-img{
+      width: 50%;
+      padding: 5% 5%;
+  }
+
+  .management-back-img img{
+      width: 120px;
+      height: 120px;
+      margin-top: 30%;
+      border-radius: 50%;
+      border: 8px solid var(--golden-color);
+  }
+
+  /* .card-back-info > .phone-icon{
+    font-size: 2rem !important; 
+    padding: 10px;
+} */
+
+.info-icon{
+    font-size: 2rem !important; 
+    padding: 10px;
+}
+
+.management-card-back ul li a {
+    color: var(--basic-color-one);
+    ;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.management-card-back>ul>li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*====================================
+        TOOLTIP START
+====================================*/
+
+
+/* Tooltip container */
+
+.tooltip-club {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Tooltip text */
+
+.tooltip-club .tooltiptext-club {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: black;   
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    /* bottom: 125%; */
+    /* left: 50%; */
+    /* margin-left: -60px; */
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.85rem;
+  }
+
+.tooltip-club-phone {
+    visibility: hidden;
+    width: 130px;
+    background-color: #000;   
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: -50%;
+    right: -100%;
+    /* margin-left: -60px; */
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1rem;
+}
+
+.tooltip-club-email {
+    visibility: hidden;
+    /* width: 120px; */
+    /* background-color: red;    */
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: -50%;
+    right: -150%;
+    /* margin-left: -60px; */
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    /* font-size: 0.85rem; */
+    /* width: 100%; */
+  }
+  
+  /* Tooltip arrow */
+  /* .tooltip-club .tooltiptext-club::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+  } */
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip-club:hover .tooltiptext-club {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*====================================
+        TOOLTIP END
+====================================*/
+
+.club-title {
+    margin: 10vh auto 10vh;
+    text-align: center;
+    padding: 3vh;
+    font-weight: bold;
+    font-size: 2rem;
+    background: var(--line-color-two);
+    width: 80%;
+}
+
+.role-and-name {
+    color: var(--basic-color-two);
+}
+
+
+/* =======================================
+             LIFE MEMBERS
+======================================== */
+
+.life-members-all {
+    padding: 5%;
+}
+
+.life-title-h1 {
+    padding: 5%;
+}
+
+.life-title h2{
+    font-size: 3rem;
+    text-align: center;   
+    width: 100%;
+}
+
+.life-content{
+    padding-top: 3%;
+}
+
+.life-content-text{
+    text-align: center;
+}
+
+
+.container {
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    margin-bottom: 50px
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 100;
+    
+}
+
+
+.mt-100 {
+    margin-top: 100px
+}
+
+.profile img.vertical {
+    width: 146px;
+    height: 195px;
+}
+
+.profile img.horizontal {
+    width: 195px;
+    height: 146px;
+}
+
+
+.card {
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+}
+
+.card-body {
+    position: relative;
+    bottom: 35px
+}
+
+.card-title{
+    color: var(--golden-color);
+}
+.text-muted {
+    color: #000 !important;
+}
+
+
+/* =======================================
+             PROGRAMS
+======================================== */
+
+.club-programs-all{
+    padding: 5%;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    background: url(../img/cricket-0019.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: 110vh; */
+}
+
+.club-programs-sentence {
+    padding: 10px;
+}
+
+.club-programs-sentence>h3 {
+    color: var(--golden-color);
+}
+
+.club-programs-h1 h1 {
+    font-size: 3rem;
+    float: left;
+    padding-top: 20px;
+    margin-bottom: 5vh;
+    color: var(--basic-color-two);
+}
+
+.club-programs-button {
+    align-self: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.club-programs-button a>input {
+    font-size: 1rem;
+    height: 50px;
+    width: 130px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--basic-color-two);
+    border: 2px solid var(--golden-color);
+    background: var(--golden-color);
+    display: inline-block;
+    transition: .4s;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+}
+
+.club-programs-button input:hover {
+    background: var(--line-color-two);
+    border-color: var(--line-color-two);
+    color: var(--basic-color-one);
+    font-weight: bold;
+    outline: none;
+}
+
+.club-programs-contacts {
+    width: 100%;
+}
+
+.club-programs-juniors {
+    padding: 3vh;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    transition: all .3s ease-in-out;
+    width: 70%;
+    margin: 0vh auto 5vh;
+    background: var(--bg-gray);
+}
+
+.club-programs-juniors:hover,
+.club-programs-league:hover,
+.club-programs-women:hover {
+    transform: scale(1.25);
+    background: var(--basic-color-two);
+}
+
+.club-programs-juniors>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 5px solid var(--golden-color);
+    align-self: center;
+}
+
+.club-programs-juniors>p {
+    padding-left: 20px;
+    width: 80%;
+}
+
+.club-programs-league {
+    height: 30%;
+    /* border: 3px solid var(--bg-color-two); */
+    padding: 3vh;
+    display: flex;
+    flex-direction: row;
+    /* margin-bottom: 5vh; */
+    transition: all .3s ease-in-out;
+    width: 70%;
+    margin: 0vh auto 5vh;
+    background: var(--bg-gray);
+}
+
+.club-programs-league>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 5px solid var(--golden-color);
+    align-self: center;
+}
+
+.club-programs-league>p {
+    padding-left: 20px;
+    width: 80%;
+}
+
+.club-programs-women {
+    height: 30%;
+    /* border: 3px solid var(--bg-color-two); */
+    padding: 3vh;
+    display: flex;
+    flex-direction: row;
+    transition: all .3s ease-in-out;
+    width: 70%;
+    margin: 0vh auto 10vh;
+    background: var(--bg-gray);
+}
+
+.club-programs-women>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 5px solid var(--golden-color);
+    align-self: center;
+}
+
+.club-programs-women>p {
+    padding-left: 20px;
+    width: 80%;
+}
+
+
+/* =======================================
+             FACILITIES
+======================================== */
+
+.club-facilities-all{
+    padding: 10vh 5vw;
+    background: var(--bg-gray);
+    /* height: 100vh; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; */
+}
+
+.club-facilities-h1 h1{
+    padding: 3vh;
+    font-size: 3rem;
+    margin: 0 auto;
+    color: var(--basic-color-one);
+}
+
+.club-facilities-title h2{
+    font-size: 3rem;
+    text-align: center;   
+    width: 100%;
+    padding-top: 5%;
+}
+
+.club-facilities_slider {
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+    padding-top: 200px; 
+    position: relative;
+    margin: 0 auto;
+    }
+
+.club-facilities_slider > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+    border-radius: 3px;
+    box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+    }
+
+.club-facilities_slider input[name='club-slider_switch'] {
+    display: none;
+    }
+    
+.club-facilities_slider label { /* thumbnail */
+    margin: 7vh 15px 0 10px;
+    border: 2px solid var(--basic-color-two);
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0.6;
+    border-radius: 3px;
+    }
+
+.club-facilities_slider label:hover {
+    opacity: 0.9;
+    }
+
+.club-facilities_slider label img {
+    display: block;
+    width: 40px;
+    border-radius: 2px;
+    }
+
+.club-facilities_slider input[name='club-slider_switch']:checked + label {
+    opacity: 1;
+    }
+
+.club-facilities_slider input[name='club-slider_switch'] ~ img {
+    opacity: 0;
+    }
+
+.club-facilities_slider input[name='club-slider_switch']:checked + label + img {
+    opacity: 1;
+    }
+
+
+@media screen and (max-width: 1024px) {
+    /* club top */
+    .club-all {
+        margin-top: 80px;
+        height: 90vh;
+    }
+    .opacity-con {
+        height: 90vh;
+    }
+    .club-title-h1 {
+        height: 200px;
+        width: 160px;
+    }
+    .club-maintitle {
+        font-size: 5rem;
+    }
+    p.club-sentence-first {
+        font-size: 1.2rem;
+    }
+    .club-title-button {
+        height: 50px;
+        width: 100px;
+    }
+    /* about */
+    .club-about-sentence_img {
+        margin-left: 25%;
+        margin-top: 40%;
+        height: 180px;
+        width: 180px;
+    }
+    .club-about-sentence_img::before {
+        width: 180px;
+        height: 180px;
+    }
+    .about-wvcc-h1 {
+        font-size: 2.5rem;
+    }
+    .club-about-sentence_third {
+        padding-top: 3vh;
+    }
+    .club-management-all {
+        padding-top: 90px;
+    }
+    .club-management-title>h1 {
+        font-size: 2.5rem;
+    }
+
+
+    /*  Life members */
+    .profile img.vertical {
+        width: 120px;
+        height: 170px;
+    }
+    
+    .profile img.horizontal {
+        width: 160px;
+        height: 120px;
+    }
+
+}
+
+    @media screen and (max-width: 768px){
+
+        /* top */
+
+        .club-all {
+            margin-top: 100px;
+        }
+    
+        .club-title-explanation {
+            background: none;
+            left: 0;
+            margin: 0 auto;
+        }
+    
+        .club-title-h1 {
+            margin: 0 auto;
+            transform: none;
+        }
+    
+        p.club-sentence-first {
+            font-size: 1.5rem;
+            width: 70vw;
+            color: var(--basic-color-two);
+            top: 40%;
+        }
+    
+        .club-title-button {
+            top: 85%;
+        }
+
+        /* about */
+
+        #about-wvcc{
+            width: 100%;
+        }
+
+        .club-about-all{
+            padding: 3vh 5vw 0vh;
+            /* height: 185vh; */
+        }
+
+        .club-about-top{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .club-about-bottom{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .club-about-sentence{
+            width: 100%;
+            padding-top: 3vh;
+        }
+
+        .club-about-sentence_second{
+            padding-left: 2vw;
+        }
+
+        .club-about-third{
+            width: 100%;
+        }
+
+        .club-about-imgbg{
+            display: none;
+        }
+
+        .club-about-sentence_img{
+            display: none;
+            /* background: var(--line-color-two);
+            width: 80px;
+            height: 80px;    
+            position: absolute;
+            margin-left: 20%;
+            margin-top: 200%; */
+        }
+
+        .club-about-sentence_img::before{
+            position: absolute;
+            content: "";
+            background: url(../img/cricketBall.png) no-repeat;
+            background-size: cover;
+            width: 80px;
+            height:80px;
+            margin-left: -20px;
+            margin-top: -20px;
+            z-index: 0;
+        }
+
+        /* management */
+
+        .club-management-all {
+            /* height: 130vh; */
+            background: url(../img/cricket-0015-club-mobile.png) center no-repeat;
+            background-size: cover;
+        }
+
+        .club-management-title > h1{
+            font-size: 2rem;
+        }
+
+        .club-management-card{
+            width: 300px;
+          height: 144px;
+        }
+        
+        .club-management-card {
+            display: flex;
+            /* justify-content: space-around; */
+            list-style: none;
+            width: 300px;
+            margin: 1em auto;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .club-management-card .management-card-front, .club-management-card .management-card-front .management-card-back{
+            width: 300px;
+          height: 144px;
+        }
+
+        .club-management-all{
+            padding-top: 90px;
+        }
+
+        .club-management-cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .management-card-back{
+            position: absolute;
+            top: 0;
+          margin: 0;
+          width: 300px;
+          height: 144px;
+          box-sizing: border-box;
+          background: var(--bg-gray);
+        }
+        
+        .management-card-logo {
+            width: 100%;
+            height: 100%;
+            position: relative;
+          }
+          
+          .management-card-logo > img{
+              height: 75px;
+              width: 63px;
+              padding: 15px;
+          }
+          
+          .management-card-logo > h4{
+              font-size: 1rem;
+              letter-spacing: 2px;
+              margin-bottom: 10px;
+              color: white;
+              text-align: center;
+              margin: 0;
+          }
+          
+          .management-card-logo > h1{
+              margin: 0;
+              color: black;
+              text-transform: uppercase;
+              font-weight: 400;
+              line-height: 50%;
+              text-align: center;
+              font-size: 1rem;
+          }
+          
+         .management-name-role{
+             line-height: 2;
+             text-align: center;
+             padding-top: 15%;
+             padding-right: 15%;
+        } 
+        
+        .management-name-role > h4{
+            font-size: 0.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: var(--basic-color-one);
+            text-align: center;
+            margin: 0;
+        }
+        
+        .management-name-role > h1{
+            margin: 0;
+            color: var(--basic-color-one);
+            text-transform: uppercase;
+            font-weight: 400;
+            line-height: 50%;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        .name-role-small{
+            line-height: 1.2;
+            text-align: center;
+            padding-top: 15%;
+            padding-right: 5%;
+        }
+
+        .name-role-small > h4{
+            letter-spacing: 1;
+            font-size: 0.5rem;
+            padding-right: 20px;
+        }
+
+        .name-role-small > h1{
+            text-align: center;
+            padding-top: 3px;
+            font-size: 1.4rem;
+            line-height: 80%;
+        }
+
+        .name-role-small > p{
+            letter-spacing: 0;
+            font-size: 0.5rem;
+            font-weight: bold;
+            color: var(--basic-color-one);
+            text-align: center;
+            width: 100%;
+          }
+      
+        .card-back-name{
+            font-size: 1rem;
+            padding-top: 20px;
+        }
+      
+        .card-back-info{
+            font-size: 1rem;
+        }
+
+        /* h4 .management-name-role-small{
+            letter-spacing: 0;
+            color: red;
+        } */
+      
+        /* .card-back-info > .fa-phone-alt:before{
+            font-size: 1.8rem;
+        } */
+      
+        .management-back-img{
+            width: 50%;
+            padding: 5% 5%;
+            margin: auto 0;
+        }
+      
+        .management-back-img img{
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            border-radius: 50%;
+            border: 5px solid var(--golden-color);
+        }
+
+        .management-email-margin{
+            margin-right: 20px;
+        }
+      
+      .info-icon{
+          font-size: 1rem !important; 
+          padding: 10px;
+      }
+      
+        .management-card-back ul li a{
+            color: var(--basic-color-one);;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+      
+        .management-card-back > ul > li{
+            text-decoration: none;
+            list-style: none;
+        }
+      
+        /*====================================
+              TOOLTIP START
+      ====================================*/
+      
+      
+       /* Tooltip container */
+       .tooltip-club {
+          position: relative;
+          display: inline-block;   
+        }
+        
+        /* Tooltip text */
+        .tooltip-club .tooltiptext-club {
+          visibility: hidden;
+          /* width: 120px; */
+          background-color: black;   
+          color: #fff;
+          text-align: center;
+          padding: 5px 5px;
+          border-radius: 6px;
+        
+          /* Position the tooltip text */
+          position: absolute;
+          z-index: 1;
+          /* bottom: 125%; */
+          /* left: 50%; */
+          /* margin-left: -60px; */
+        
+          /* Fade in tooltip */
+          opacity: 0;
+          transition: opacity 0.3s;
+          font-size: 0.5rem;
+        }
+      
+        .tooltip-club-phone{
+          visibility: hidden;
+          width: 100px;
+          background-color: #000;   
+          color: #fff;
+          text-align: center;
+          padding: 5px 5px;
+          border-radius: 6px;
+        
+          /* Position the tooltip text */
+          position: absolute;
+          z-index: 1;
+          bottom: -80%;
+          right: -100%;
+          /* margin-left: -60px; */
+        
+          /* Fade in tooltip */
+          opacity: 0;
+          transition: opacity 0.3s;
+          /* font-size: 0.5rem; */
+        }
+      
+        .tooltip-club-email{
+          visibility: hidden;
+          /* width: 120px; */
+          /* background-color: red;    */
+          color: #fff;
+          text-align: center;
+          padding: 5px 5px;
+          border-radius: 6px;
+        
+          /* Position the tooltip text */
+          position: absolute;
+          z-index: 1;
+          bottom: -80%;
+          right: -160%;
+          /* margin-left: -60px; */
+        
+          /* Fade in tooltip */
+          opacity: 0;
+          transition: opacity 0.3s;
+          /* font-size: 0.85rem; */
+          /* width: 100%; */
+        }
+        
+        /* Tooltip arrow */
+        /* .tooltip-club .tooltiptext-club::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #000 transparent transparent transparent;
+        } */
+        
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip-club:hover .tooltiptext-club {
+          visibility: visible;
+          opacity: 1;
+        } 
+
+          /* programs */
+
+        .club-programs-sentence > h3{
+            text-align: center;
+        }
+
+        .club-programs-all{
+            /* height: 170vh; */
+            background: url(../img/cricket-001-tablet.png) fixed no-repeat;
+            background-size: cover;
+        }
+
+        .club-programs-juniors, .club-programs-league, .club-programs-women{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .club-programs-juniors:hover, .club-programs-league:hover, .club-programs-women:hover{
+            transform: scale(1.1);
+        }
+
+        /* facilities */
+
+        .club-facilities-h1{
+            background: var(--golden-color);
+            width: 80%
+        }
+        
+
+    }
+
+@media screen and (max-width: 375px) {
+    /* top */
+    .club-all {
+        margin-top: 80px;
+        background: url(../img/club-cricket40-mobile.png) center no-repeat;
+        background-size: cover;
+    }
+    p.club-sentence-first {
+        font-size: 1.2rem;
+    }
+    .club-maintitle {
+        font-size: 4rem;
+    }
+    .club-title-h1 {
+        height: 180px;
+        width: 145px;
+    }
+    .about-wvcc-h1 {
+        font-size: 2rem;
+    }
+    .club-about-imgbg {
+        display: block;
+    }
+    .club-about-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .club-about-sentence_img {
+        display: none;
+    }
+    .club-about-sentence_img::before {
+        display: none;
+    }
+    .club-management-all {
+        /* height: 130vh; */
+        background: url(../img/cricket-0015-club-mobile.png) center no-repeat;
+        background-size: cover;
+    }
+    .club-management-title {
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+    .club-management-title h1 {
+        font-size: 1.3rem;
+    }
+    .club-programs-all {
+        /* height: 235vh; */
+        background: url(../img/cricket-0019-mobile.png) center no-repeat;
+        background-size: cover;
+    }
+    .club-programs-h1 h1 {
+        text-align: center;
+        float: none;
+    }
+    .club-programs-juniors,
+    .club-programs-league,
+    .club-programs-women {
+        width: 80%;
+        height: 33%;
+    }
+}
