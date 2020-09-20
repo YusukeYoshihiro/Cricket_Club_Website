@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700");
+.ease,
+.slider .imgContainer .image,
+.slider .indicators li,
+.slider .carousel-item .content>* {
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+}
+
+#club-facilities {
+    /* font-family: "Work Sans", sans-serif;
+    background-color: #bbb;
+    height: 100vh; */
+}
+
+.container h2 {
+    font-size: 3rem;
+}
+
+.slider {
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0rem 0.25rem 1.25rem 0.0625rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0rem 0.25rem 1.25rem 0.0625rem rgba(0, 0, 0, 0.25);
+}
+
+.slider .imgContainer {
+    min-height: 18.75rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(1deg, #E6CA2E, #E6CA2E);
+    -webkit-box-shadow: 0rem 0.125rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0rem 0.125rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.slider .imgContainer .image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slider .imgContainer .image.active {
+    opacity: 1;
+}
+
+.slider .imgContainer .image.active img {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+
+/* slider content*/
+
+.slider .content {
+    background-color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.slider .content .title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.slider .content .desc {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    margin-right: 10%;
+    text-indent: 10px;
+}
+
+.slider .content .contact-form_btn {
+    background-image: linear-gradient(45deg, #FF9900 0%, #FF9900);
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    outline: 0;
+    -webkit-box-shadow: 0rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.slider .content .contact-form_btn:hover {
+    background: #E6CA2E;
+    border-color: #E6CA2E;
+    color: black;
+    font-weight: bold;
+    outline: none;
+}
+
+
+/*carousel slide*/
+
+.slider .slide {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.slider .indicators {
+    top: 0;
+    bottom: auto;
+    margin: 0.25rem;
+}
+
+.slider .indicators li {
+    height: 0.625rem;
+    width: 0.625rem;
+    background-color: #b3b3b3;
+    border-radius: 1.25rem;
+    background-clip: initial;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    margin: 0.25rem;
+}
+
+.slider .indicators li.active {
+    width: 1.875rem;
+    background-color: #E6CA2E;
+}
+
+@media (min-width: 780px) {
+    .slider .indicators {
+        top: auto;
+        bottom: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        left: auto;
+        margin: auto 1rem;
+        bottom: 0;
+        top: 0;
+    }
+    .slider .indicators li.active {
+        height: 1.875rem;
+        width: 0.625rem;
+    }
+}
+
+
+/*indicators*/
+
+@media (min-width: 992px) {
+    .slider .indicators {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        left: auto;
+        margin: auto 1rem;
+        bottom: 0;
+        top: 0;
+    }
+    .slider .indicators li.active {
+        height: 1.875rem;
+        width: 0.625rem;
+    }
+}
+
+
+/*animation*/
+
+.slider .carousel-item .content>* {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.slider .carousel-item.active .content>* {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.slider .carousel-item.active .content>*:nth-child(1) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.slider .carousel-item.active .content>*:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.slider .carousel-item.active .content>*:nth-child(3) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.slider .carousel-item.active .content>*:nth-child(4) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.slider .carousel-item.active .content>*:nth-child(5) {
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.slider .carousel-item.active .content>*:nth-child(6) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.slider .carousel-item.active .content>*:nth-child(7) {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+.slider .carousel-item.active .content>*:nth-child(8) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.slider .carousel-item.active .content>*:nth-child(9) {
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s;
+}
+
+.slider .carousel-item.active .content>*:nth-child(10) {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+/*# sourceMappingURL=test.css.map */

@@ -1,0 +1,694 @@
+:root{
+     --font-style: 'Oswald', cursive;
+     --golden-color: #FF9900;
+     --line-color-one: #2e9fe6;
+     --line-color-two: #E6CA2E;
+     --font-color: #bbb;
+     --bg-color-one: #222;
+     --bg-color-two: #444;
+     --year-color: #333;    
+     --bg-gray: #e5e5e5;
+     --font-style-bebas: 'Bebas Neue', cursive;
+     --font-style-oswald: 'Oswald', sans-serif;
+ }
+ 
+ 
+.pleft3{
+   padding-left: 3%; 
+}
+
+.pleft4{
+    padding-left: 3%; 
+ }
+
+.pleft6{
+    padding-left: 6%; 
+ }
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    color: #F49D00;
+}
+
+
+.cricket-list{
+    list-style-image: url('../img/lst_icon_40.png');
+}
+
+
+ /*  Main     */
+
+ .league {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.league-title {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/league_main.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.opacity-con {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+ 
+.league-colorbox {
+    height: 220px;
+    width: 200px;
+    background: #FF9900;
+    position: absolute;
+    flex-direction: row;
+    top: 0;
+}
+
+.league-maintitle {
+    position: absolute;
+    font-size: 4rem;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.league-title-subtext-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 40%;
+    position: relative;
+    left: 5%;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+p.league-title-subtext {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+}
+
+.contact-form_btn {
+    font-size: 1rem;
+    height: 60px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #F49D00;
+    background: #F49D00;
+    display: inline-block;
+    transition: .4s;
+    text-decoration: none;
+    justify-content: center;
+    position: absolute;
+    top: 68%;
+    transform: translateX(-50%);
+}
+
+.contact-form_btn:hover {
+    background: #E6CA2E;
+    border-color: #E6CA2E;
+    color: black;
+    font-weight: bold;
+    outline: none;
+}
+
+
+
+ /*  teams  */
+
+ .teams {   
+    width: 100%;  
+    font-size: 1rem;
+    background-color: var(--bg-gray);
+}
+
+.teams-main{   
+    width: 100%;
+    padding: 5% 30% 5% 5%;
+}
+
+
+/*  Training  */
+
+.training {
+    width: 100%;
+}
+
+.training-main{  
+    width: 100%;  
+    padding: 5%;   
+}
+
+.training-div-content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+.training-main h2{
+    text-align: right;
+}
+
+.training-text{
+    height: 100%;
+    width: 70%;
+    padding-right: 1%;
+}
+
+.training-img{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1% 2% 0 0;
+}
+
+
+.training-img img{
+    background-color: aquamarine;  
+    max-width: 93%;
+    max-height: 100%;   
+}
+
+
+.yellow-square-horizontal{
+    background-color: var(--golden-color);
+    width: 70%;
+    height: 15px;
+}
+
+
+/*  indoor Training  */
+
+.indoor {
+    width: 100%;   
+    font-size: 1rem;
+}
+
+.indoor-main{
+    margin: 5% auto;
+    width: 100%;
+    height: 100%;
+}
+
+.indoor-main h2{
+    text-align: center;
+}
+
+.indoor-main h3{
+    text-align: center;
+    padding: 3%;
+}
+
+.indoor-div-text{
+    height: 85%;
+    display: flex;
+    padding: 0 5%;
+}
+
+
+.indoor-text-left{
+    width: 50%;
+    padding: 2% 2% 0 0;
+    font-size: 1rem;
+}
+
+.indoor-text-center{
+    width: 100%;    
+}
+
+.indoor-text-right{
+    width: 50%;
+    padding: 2% 0 0 2%;
+    font-size: 1rem;
+}
+
+.indoor-text-info{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0% 0 3% 40%;
+}
+
+
+
+/*  schedule */
+.schedule {
+    width: 100%;
+    background-color: var(--bg-gray);
+}
+
+.schedule-main{
+    width: 100%;
+    padding: 5%;   
+}
+
+.schedule-div-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-bottom-info{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule-left-text{
+    height: 100%;
+    width: 60%;
+    /* padding-right: 1%; */
+}
+
+.schedule-right-img{
+  
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    margin: 0 auto;
+}
+
+.schedule-main h2{
+    text-align: left;
+}
+
+.schedule-div-info{
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.schedule-div-content h3{
+    text-align: left;
+}
+
+.schedule-info-teams{
+    height: 100%;
+    width: 100%;
+}
+
+.schedule-info-notes{
+    height: 100%;
+    width: 100%;  
+    padding-top: 5%;
+
+}
+
+.schedule-right-img img{
+    background-color: aquamarine;  
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 270px;    
+}
+
+.yellow-square-vertical{
+    background-color: var(--golden-color);
+    width: 20px;
+    height: 25vh;
+}
+
+@media screen and (max-width: 1024px) {
+
+    h2{
+        font-size: 2.5rem;
+    }
+    
+    /* main*/
+    
+    .league-title {
+        margin-top: 80px;
+        height: auto;
+    }
+
+    .opacity-con {
+        height: auto;
+    }
+
+    .league-colorbox {
+        height: 200px;
+        width: 200px;
+    }
+
+    .league-maintitle {
+        font-size: 4rem;
+    }
+
+    p.league-title-subtext {
+        font-size: 1.5rem;
+    }
+
+    .contact-form_btn {
+        height: 50px;
+        width: 120px;
+        top: 75%;
+    }
+
+
+
+   
+    /* Teams */
+   
+    .teams{
+        font-size: 1rem;
+    }
+    
+    .teams-main{
+        padding: 5% 10%;
+    }
+   
+    /* Training */
+    .training{
+        font-size: 1rem;
+    }
+   
+    .training-main{
+        padding: 5% 10%;
+    }
+     
+    .training-img{
+        width: 52%;
+        height: 100%;
+        padding-top: 15%;
+    } 
+
+    .training-img img{
+        min-width: 250px;
+    }
+    
+   
+   
+    /* indoor training*/
+   
+    .indoor{
+        font-size: 0.9rem;
+    }
+   
+    .indoor-main{
+        padding: 5% 10%;   
+        margin: 0;
+    }
+   
+    .indoor-div-text{
+        width: 100%;
+        padding: 5% 0;
+    }
+   
+    .indoor-text-left,
+    .indoor-text-center,
+    .indoor-text-right{       
+        width:100%;
+        padding: 0 2%;
+    }
+    
+    .indoor-text-info{
+        width: 100%;      
+        padding: 5% 0 5% 30%;
+    }
+   
+    .indoor-main h3{
+        padding: 3% 6%;
+    }
+   
+    /* schedule */
+    .schedule{
+        font-size: 0.9rem;
+    }
+   
+    .schedule-main{
+        padding: 5% 10%;
+    }
+   
+    .schedule-div-content{
+        width: 100%;   
+    }
+    
+    .schedule-left-text{      
+        width: 100%;        
+    }
+   
+      
+    .schedule-info-teams{        
+        width: 100%;
+    }
+    
+    .schedule-info-notes{
+        width: 100%;
+    }
+      
+
+    .schedule-bottom-info{
+        flex-direction: column;
+    }
+
+    .pleft4,
+    .pleft6{
+        padding-left: 3%;
+    }
+
+    .schedule-right-img{
+        padding-top: 15%;
+        width: 55%;       
+    }
+
+    
+    .yellow-square-vertical {
+        height: 17vh;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px){
+  
+    /* main*/
+    .league-title {
+        margin-top: 100px;
+    }
+
+    .opacity-con {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .league-title-subtext-background {
+        background: none;
+        left: 0;
+    }
+
+    .league-colorbox {
+        margin: 0 auto;
+        transform: none;
+    }
+
+    p.league-title-subtext {
+        width: 70vw;
+        color: white;
+        top: 40%;
+    }
+
+    .contact-form_btn {       
+        top: 65%;
+    }
+   
+    /* Teams */
+   
+    .teams{
+        font-size: 0.9rem;
+    }
+    
+    .teams-main{
+        padding: 5% 10%;
+    }
+   
+    /* Training */
+    .training{
+        font-size: 0.9rem;
+    }
+    
+    .training-div-content{
+        flex-direction: column-reverse;    
+    }
+    
+    .training-text{       
+        width: 100%;       
+    }
+    
+    .training-img{
+        width: 100%;
+        padding: 5% 10% 0 10%;
+    }
+
+    .training-img img{
+        max-width: 90%;
+    }
+   
+   
+    /* indoor training*/
+     
+    .indoor-div-text{       
+        flex-direction: column;
+    }
+   
+    .indoor-text-left,
+    .indoor-text-center,
+    .indoor-text-right{       
+        font-size: 0.85rem;
+    }
+
+    .indoor-text-right{       
+        padding-top: 5%;
+    }
+    
+    .indoor-text-info{
+        width: 100%;      
+        padding: 5% 0 5% 20%;
+    }
+   
+   
+    /* schedule */
+    
+    .schedule-div-content{
+        flex-direction: column; 
+         
+    }
+    
+      
+    .schedule-info-teams{        
+        width: 100%;
+    }
+    
+      
+    .pleft4,
+    .pleft6{
+        padding-left: 4%;
+    }
+
+    .schedule-bottom-info{
+        flex-direction: column;
+    }
+
+    .schedule-right-img{
+        padding-top: 10%;
+        width: 100%;
+    }
+
+    .schedule-right-img img{
+        max-width: 90%;
+    }
+
+    .yellow-square-vertical {
+        height: 20vh;
+    }
+
+    .yellow-square-horizontal{
+        height: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 375px){
+
+    h2{
+        font-size: 2rem;
+    }
+    
+    
+    /* main*/
+    .league-title {
+        margin-top: 80px;
+    }
+
+    p.league-title-subtext {
+        font-size: 1.2rem;
+    }
+
+
+    /* Teams */
+
+    .teams{
+        font-size: 0.8rem;
+    }
+    
+    /* Training */
+    .training{
+        font-size: 0.8rem;
+    }
+
+    .training-img{       
+        padding: 5% 0;
+    }
+
+
+    /* indoor training*/
+
+    .indoor{
+        font-size: 0.8rem;
+    }
+
+
+    .indoor-text-left,
+    .indoor-text-center,
+    .indoor-text-right{       
+        font-size: 0.8rem;
+    }
+    
+    .indoor-text-info{
+        width: 100%;      
+        padding: 5% 15%;
+    }
+
+
+    /* schedule */
+    .schedule{
+        font-size: 0.8rem;
+    }
+
+    
+
+    .schedule-div-info{
+        flex-direction: column;
+    }
+
+    .schedule-bottom-info{
+        flex-direction: column;
+    }
+
+    .schedule-info-notes{
+        padding-top: 10%;
+    }
+
+    .pleft3,
+    .pleft4{
+        padding-left: 6%;
+    }
+
+    .schedule-right-img{
+        padding-top: 10%;
+        width: 100%;
+    }
+
+}

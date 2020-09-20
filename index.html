@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!-- link jquery for slideShow-->
+    <meta name="description" content="West Vancouver Cricket Club Website"/>
+    <meta name="keywords" content="website, lab, html, css, js"/>
+    <meta name="author"
+          content="Ion Gutu, Hector Solares Martinez, Yusuke Yoshihiro, Sachiko Yokoyama, Hiroaki Bandai"/>
+    <title>West Vancouver Cricket Club | Hugo Ray Park | West Vancouver | BC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="http://www.westvancouvercricketclub.ca/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/timeline.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1ee1bda50.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <!-- add font-family for SLIDE SHOW PART  "Bebas|Oswald|Patua "-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Oswald|Patua+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous"></script>
+            <script src="../js/contact.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-------------------------- NAV START -------------------------->
+    <header id="header">
+        <nav id="nav">
+            <div class="section_logo">
+                <img class="nav-logo" src="./img/logo2.png" alt="logo">
+                <div class="nav-title">
+                    <h1 class="nav-maintitle">West Vancouver Cricket Club</h1>
+                    <p class="nav-subtitle">Hugo Ray Park, West Vancouver, BC EST 1955</p>
+                </div>
+            </div>
+            <ul class="menu">
+                <li class="menu__single">
+                    <a href="#">HOME</a>
+                </li>
+                <li class="menu__single">
+                    <a href="./html/club.html" class="init-bottom tab ">CLUB</a>
+                    <ul class="menu__second-level">
+                        <li><a class="tab2" href="./html/club.html#about-wvcc">ABOUT WVCC</a></li>
+                        <li><a class="tab2" href="./html/club.html#club-management">CLUB MANAGEMENT</a></li>
+                        <li><a class="tab2" href="./html/club.html#life-members">LIFE MEMBERS</a></li>
+                        <li><a class="tab2" href="./html/club.html#club-programs">PROGRAMS</a></li>
+                        <li><a class="tab2" href="./html/club.html#club-facilities">FACILITIES</a></li>
+                    </ul>
+                </li>
+                <li class="menu__single">
+                    <a href="./html/junior.html" class="init-bottom tab">JUNIORS</a>
+                    <ul class="menu__second-level">
+                        <li><a class="tab2" href="./html/junior.html#programs">PROGRAMS</a></li>
+                        <li><a class="tab2" href="./html/junior.html#shool_cricket">SCHOOL CRICKET</a></li>
+                        <li><a class="tab2" href="./html/junior.html#summer_camp">SUMMER CAMP</a></li>
+                    </ul>
+                </li>
+                <li class="menu__single">
+                    <a href="./html/league.html" class="init-bottom tab">LEAGUE</a>
+                    <ul class="menu__second-level">
+                        <li><a class="tab2" href="./html/league.html#teams">TEAMS</a></li>
+                        <li><a class="tab2" href="./html/league.html#training">TRAINING</a></li>
+                        <li><a class="tab2" href="./html/league.html#indoor">INDOOR TRAINING</a></li>
+                        <li><a class="tab2" href="./html/league.html#schedule">SCHEDULE</a></li>
+                    </ul>
+                </li>
+                <li class="menu__single">
+                    <a href="./html/woman.html" class="init-bottom tab">WOMEN'S</a>
+                    <ul class="menu__second-level">
+                        <li><a class="tab2" href="./html/woman.html#container-one">TEAM</a></li>
+                        <li><a class="tab2" href="./html/woman.html#container-two">SCHEDULE</a></li>
+                        <li><a class="tab2" href="./html/woman.html#container-three">TRAINING</a></li>
+                    </ul>
+                </li>
+                <li class="menu__single">
+                    <a href="./html/clubHouse.html" class="init-bottom tab">CLUBHOUSE</a>
+                    <ul class="menu__second-level">
+                        <li><a class="tab2" href="./html/clubHouse.html#rental">RENTAL</a></li>
+                    </ul>
+                </li>
+                <li class="menu__single">
+                    <a href="./html/contact.html" class="init-bottom tab">CONTACT</a>
+                    <ul class="menu__second-level">
+                        <li><a class="tab2" href="./html/contact.html#location-directions">LOCATION</a></li>
+                        <li><a class="tab2" href="./html/contact.html#contact-newsletter">NEWSLETTER</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="mobile_nav">
+            <div id="myNav" class="overlay">
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <div class="mobile-first-label">
+                        <a class="mobile-first-label-main" href="#">HOME</a>
+                    </div>
+                    <div class="mobile-first-label">
+                        <a class="mobile-first-label-main" href="#">CLUB</a>
+                        <ul class="mobile-menu-second-level">
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/club.html#about-wvcc">ABOUT WVCC</a>
+                            </li>
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/club.html#club-management">CLUB
+                                MANAGEMENT</a></li>
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/club.html#life-members">LIFE
+                                MEMBERS</a></li>
+                            <li><a class="mobile-menu-second-level-textcolor"
+                                   href="./html/club.html#club-programs">PROGRAMS</a></li>
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/club.html#club-facilities">FACILITIES</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-first-label">
+                        <a class="mobile-first-label-main" href="#">JUNIORS</a>
+                        <ul class="mobile-menu-second-level">
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/junior.html#programs">PROGRAMS</a>
+                            </li>
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/junior.html#shool_crickets">SCHOOL
+                                CRICKET</a></li>
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/junior.html#summer_camp">SUMMER
+                                CAMP</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-first-label">
+                        <a class="mobile-first-label-main" href="#">LEAGUE</a>
+                        <ul class="mobile-menu-second-level">
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/league.html#teams">TEAMS</a></li>
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/league.html#training">TRAINING</a>
+                            </li>
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/league.html#indoor">INDOOR
+                                TRAINING</a></li>
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/league.html#schedule">SCHEDULE</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-first-label">
+                        <a class="mobile-first-label-main" href="#">WOMEN'S</a>
+                        <ul class="mobile-menu-second-level">
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/woman.html#container-one">TEAM</a>
+                            </li>
+                            <li><a class="mobile-menu-second-level-textcolor"
+                                   href="./html/woman.html#container-two">SCHEDULE</a></li>
+                            <li><a class="mobile-menu-second-level-textcolor"
+                                   href="./html/woman.html#container-three">TRAINING</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-first-label">
+                        <a href="./html/clubHouse.html">CLUBHOUSE</a>
+                        <ul class="mobile-menu-second-level">
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/clubHouse.html#rental">RENTAL</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-first-label">
+                        <a class="mobile-first-label-main" href="#">CONTACT</a>
+                        <ul class="mobile-menu-second-level">
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/contact.html#location-directions">LOCATION</a>
+                            </li>
+                            <li><a class="mobile-menu-second-level-textcolor" href="./html/contact.html#contact-newsletter">NEWSLETTER</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <!-- /overlay content-->
+            </div>
+            <!-- Open/show the overlay navigation menu -->
+            <div class="menu-wrapper main">
+                <div class="section_logo">
+                    <img class="nav-logo" src="./img/logo2.png" alt="logo">
+                    <div class="nav-title">
+                        <h1 class="nav-maintitle">West Vancouver Cricket Club</h1>
+                        <p class="nav-subtitle">Hugo Ray Park, West Vancouver, BC EST 1955</p>
+                    </div>
+                </div>
+                <span onclick="openNav()"><a class="mobile-menu" data-toggle="collapse"
+                                             data-target="#myNav">&#9776;&nbsp;</a></span>
+            </div>
+            <div class="menu-wrapper scroll hidden">
+                <div class="section_logo">
+                        <span onclick="openNav()"><a class="mobile-menu" data-toggle="collapse"
+                                                     data-target="#myNav">&#9776;&nbsp;</a></span>
+                    <img class="nav-logo" src="./img/logo2.png" alt="logo">
+                </div>
+            </div>
+        </div>
+        <!-- Open/show the overlay navigation menu -->
+
+        <nav class="scroll-nav">
+            <ul class="menu1">
+                <li class="menu__single1">
+                    <img class="scrollnav-logo" src="./img/logo2.png" alt="logo">
+                </li>
+                <li class="menu__single1">
+                    <a href="#">HOME</a>
+                </li>
+                <li class="menu__single1">
+                    <a href="./html/club.html" class="init-bottom1">CLUB</a>
+                    <ul class="menu__second-level1">
+                        <li><a class="lebel1-items" href="./html/club.html#about-wvcc">ABOUT WVCC</a></li>
+                        <li><a class="lebel1-items" href="./html/club.html#club-management">CLUB MANAGEMENT</a></li>
+                        <li><a class="lebel1-items" href="./html/club.html#life-members">LIFE MEMBERS</a></li>
+                        <li><a class="lebel1-items" href="./html/club.html#club-programs">PROGRAMS</a></li>
+                        <li><a class="lebel1-items" href="./html/club.html#club-facilities">FACILITIES</a></li>
+                    </ul>
+                </li>
+                <li class="menu__single1">
+                    <a href="./html/junior.html" class="init-bottom1">JUNIORS</a>
+                    <ul class="menu__second-level1">
+                        <li><a class="lebel1-items" href="./html/junior.html#programs">PROGRAMS</a></li>
+                        <li><a class="lebel1-items" href="./html/junior.html#shool_cricket">SCHOOL CRICKET</a></li>
+                        <li><a class="lebel1-items" href="./html/junior.html#summer_camp">SUMMER CAMP</a></li>
+                    </ul>
+                </li>
+                <li class="menu__single1">
+                    <a href="./html/league.html" class="init-bottom1">LEAGUE</a>
+                    <ul class="menu__second-level1">
+                        <li><a class="lebel1-items" href="./html/league.html#teams">TEAMS</a></li>
+                        <li><a class="lebel1-items" href="./html/league.html#training">TRAINING</a></li>
+                        <li><a class="lebel1-items" href="./html/league.html#indoor">INDOOR TRAINING</a></li>
+                        <li><a class="lebel1-items" href="./html/league.html#schedule">SCHEDULE</a></li>
+                    </ul>
+                </li>
+                <li class="menu__single1">
+                    <a href="./html/woman.html" class="init-bottom1">WOMEN'S</a>
+                    <ul class="menu__second-level1">
+                        <li><a class="lebel1-items" href="./html/woman.html#container-one">TEAM</a></li>
+                        <li><a class="lebel1-items" href="./html/woman.html#container-two">SCHEDULE</a></li>
+                        <li><a class="lebel1-items" href="./html/woman.html#container-three">TRAINING</a></li>
+                    </ul>
+                </li>
+                <li class="menu__single1">
+                    <a href="./html/clubHouse.html" class="init-bottom1">CLUBHOUSE</a>
+                    <ul class="menu__second-level1">
+                        <li><a class="lebel1-items" href="./html/clubHouse.html#rental">RENTAL</a></li>
+
+                    </ul>
+                </li>
+                <li class="menu__single1">
+                    <a href="./html/contact.html" class="init-bottom1">CONTACT</a>
+                    <ul class="menu__second-level1">
+                        <li><a class="lebel1-items" href="./html/contact.html#location-directions">LOCATION</a></li>
+                        <li><a class="lebel1-items" href="./html/contact.html#contact-newsletter">NEWSLETTER</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-------------------------- NAV FIN -------------------------->
+
+<!-------------------------- SlIDESHOW START -------------------------->
+<section id="section_slideshow">
+    <div class="slideshow-container">
+        <div class="slide_img">
+            <div class="sld_t_ctn">
+                <div class="sld_t_inner">
+                    <h2 class="slide_title">
+                        <span>Home of the LIONS!</span>
+                    </h2>
+                </div>
+                <div class="slogan">
+                    <h2 class="slide_slogan">
+                        <span> Playing With Pride</span>
+                    </h2>
+                </div>
+                <a href="./html/contact.html"><input type="button" value="LET'S  JOIN  US !"
+                                                     class="contact-form_button"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------- SlIDESHOW FIN -------------------------->
+
+<!-------------------------- HISTORY START -------------------------->
+<section id="section-history">
+    <h1>Our History</h1>
+    <div class="timeline">
+        <h2 class="timeline__item timeline__item--year">1995</h2>
+        <div class="timeline__item">
+            <h3 class="timeline__title">Beginnings</h3>
+            <p class="timeline__blurb">
+                <img src="./img/begin.jpg" alt="Beginnings" class="timeline-img"> The West Vancouver Cricket Club was
+                formed in 1955 by three Kerrisdale players, Tom Guy, Dr George Mott and John Able, who felt that there
+                was enough potential in the
+                area to form a club.
+            </p>
+        </div>
+        <h2 class="timeline__item timeline__item--year">1996</h2>
+        <div class="timeline__item">
+            <h3 class="timeline__title">The league</h3>
+            <p class="timeline__blurb">The past summer a series of friendly fixtures was played against other clubs in
+                the mainland league, using a small nucleus and borrowed players. The response was so favourable that a
+                full 'A' team was entered into the league
+            </p>
+        </div>
+        <h2 class="timeline__item timeline__item--year">Infancy</h2>
+        <div class="timeline__item">
+            <h3 class="timeline__title">Ground</h3>
+            <p class="timeline__blurb">The ground itself could be found in Ambleside, 100 yards from the beach with the
+                scenic North Shore Mountains rising almost from the edge of the ground. As far as beauty is concerned,
+                few grounds can compare</p>
+        </div>
+        <h2 class="timeline__item timeline__item--year">1957</h2>
+        <div class="timeline__item">
+            <h3 class="timeline__title">Teams</h3>
+            <p class="timeline__blurb">
+                <img src="./img/cricket.jpg" alt="Cricket" class="timeline-img"> A team was entered in both 'A' and 'B'
+                divisions. In the early 1960's the club fielded three teams for a number of years. However this was
+                later cut back to two teams
+            </p>
+        </div>
+    </section>
+    <!-------------------------- HISTORY FIN -------------------------->
+    <!-------------------------- FOOTER START -------------------------->
+
+    <div>
+        <footer>
+            <div class="footer_content">
+                <div class="footer_section info">
+                    <p><b>Get in touch!</b></p>
+                    <div class="footer_section_contact">
+                        <div id="social">
+                            <ul>
+                                <li class="facebook">
+                                    <a href="https://www.facebook.com/WestVancouverCricketClub/" target="_blank" rel="noopener noreferrer">
+                                        <button class="media-border ">
+                                            <i class="fa fa-facebook"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="instagram">
+                                    <a href="https://www.instagram.com/westvancouvercricketclub/" target="_blank" rel="noopener noreferrer">
+                                        <button class="media-border"><i class="fa fa-instagram"></i></button>
+                                    </a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="https://twitter.com/westvancricket/" target="_blank" rel="noopener noreferrer">
+                                        <button class="media-border"><i class="fa fa-twitter"></i></button>
+                                    </a>
+                                </li>
+                                <li class="mail">
+                                    <a href="mailto:info@westvancouvercricketclub.ca">
+                                        <button class="media-border"><i class="far fa-envelope"></i></button>
+                                    </a>
+                                </li>
+                                <li class="tel tooltip2">
+                                    <a href="tel:604-926-0820">
+                                        <span class="tooltiptext">604-926-0820</span>
+                                        <button class="media-border"><i class="fas fa-phone-alt"></i></button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="footer_section location">
+                    <p><b>Location</b></p>
+                    <i class="fa fa-location-arrow" style="font-size: 14px; color: #000; margin-right: 16px;"></i> West Vancouver Cricket Club
+                    <br> Hugo Ray Park
+                    <br> 1290 3rd Street
+                    <br> West Vancouver, BC
+                    <br> BC V7S 2Y2
+                </div>
+                <hr/>
+                <div class="footer_section newsletter">
+                    <img src="./img/logo2.png" alt="img_logo" class="logo3" />
+                    <p class="font"><b>WVC CLUB NEWSLETTER</b></p>
+                    <input type="text" name="name" placeholder="Name" required class="text-input contact-input" id="home-newsletter_name"/>
+                    <br/>
+                    <input type="email" name="email" placeholder="Email" required class="text-input contact-input" id="home-newsletter_email" />
+                    <br/>
+                    <input type="button" value="SIGN UP" class="btn" id="home-newsletter-button"/>
+                    <div id="home-result-newsletter-msg"></div>
+                </div>                   
+        </div>
+        <div class="footer_bottom">
+            © Copyright 2020 West Vancouver Cricket Club.
+            <span class="new">All rights reserved.</span>
+        </div>
+
+    </footer>
+
+    <!-- Back to top -->
+    <div id="div-bottom-top">
+        <a href="#header">
+            <img id="btnDownTop" src="./img/arrow_50.png">
+            <img id="btnDownTopHov" src="./img/arrow_hov_50.png">
+        </a>
+    </div>
+
+</div>
+
+
+<!-------------------------- FOOTER FIN -------------------------->
+</div>
+
+<script src="./js/slideshow.js"></script>
+<script src="./js/utilities.js"></script>
+
+<!-------------------------- header script -------------------------->
+<script>
+    /* Open when someone clicks on the span element */
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+    var mediaQueryWide = matchMedia('(min-width: 1025px)');
+
+    init(mediaQueryWide);
+
+    mediaQueryWide.addListener(init);
+
+    function init(mq) {
+        // init pixel
+        var px_change = 300;
+        // resister eventhandla
+
+        window.addEventListener('scroll', function (e) {
+            if (mq.matches && $(window).scrollTop() > px_change) {
+                $(".scroll-nav").css({
+                    "display": "flex"
+                });
+            } else {
+                $(".scroll-nav").css({
+                    "display": "none"
+                });
+            }
+        })
+    }
+
+    function init_mobile() {
+        // init pixel
+        var px_change = 300;
+        // resister eventhandla
+
+
+        window.addEventListener('scroll', function (e) {
+            if ($(window).scrollTop() > px_change) {
+                $(".main").addClass("hidden");
+            } else {
+                $(".main").removeClass("hidden");
+            }
+        });
+    }
+
+
+    var mediaQuery = matchMedia('(max-width: 1024px)');
+
+    handle(mediaQuery);
+
+    mediaQuery.addListener(handle);
+
+    function handle(mq) {
+
+        var px_change = 300;
+
+        if (mq.matches) {
+            window.addEventListener('scroll', function (e) {
+                if ($(window).scrollTop() > px_change) {
+                    $(".scroll").removeClass("hidden");
+                } else {
+                    $(".scroll").addClass("hidden");
+                }
+            });
+        }
+    }
+
+    window.onload = init_mobile();
+</script>
+
+</body>
+
+</html>
